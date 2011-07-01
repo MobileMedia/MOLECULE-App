@@ -1,0 +1,1 @@
+This app is a joint development of the mobile media group of CELSTEC.
