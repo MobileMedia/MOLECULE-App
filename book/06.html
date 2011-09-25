@@ -19,12 +19,12 @@ META information ###############################################################
     <!--Prevent phone number detection on iOS devices-->
     <meta content="telephone=no" name="format-detection">
     <!--Title. The content of the title is displayed on the loading screen on iOS devices-->
-    <title>2.3 Awareness</title>
+    <title>2.4 Context</title>
     <!--############################################################################
 Stylesheets ############################################################################################################################################--><!--Loading the main style sheet-->
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <!--Loading the dossier specific css-->
-    <link type="text/css" rel="stylesheet" href="styles/dossiers/05.css">
+    <link type="text/css" rel="stylesheet" href="styles/dossiers/06.css">
     <!--############################################################################
 Javascripts ############################################################################################################################################-->
     <script type="text/javascript" src="js/Hyphenator.js"></script>
@@ -32,13 +32,9 @@ Javascripts ####################################################################
     <script src="js/tmt_core.js" type="text/javascript"></script>
     <script src="js/tmt_net.js" type="text/javascript"></script>
     <script src="js/tmt_csi.js" type="text/javascript"></script>
-    <!--Card Flip Effect-->
-    <script src="js/jquery-css-transform.js" type="text/javascript"></script>
-    <script src="js/rotate3Di.js" type="text/javascript"></script>
-    <!--Audio Player-->
-    <script src="js/jquery.jplayer.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe-1.2.1.js"></script>
     <!--Mandatory JavaScripts (Uncomment if not used to speed up performance)
-<script type="text/javascript" src="js/jquery.jplayer.min.js"></script><script src="js/jquery.touchSwipe-1.2.1.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>-->
   </head>
   <body>
     <!--############################################################################
@@ -56,16 +52,16 @@ Javascripts ####################################################################
 End "Table of content" in navigation bar ###############################################################################################################--><!--############################################################################
 Start dossier navigation in navigation bar #############################################################################################################--><!--Include the small logo and the cover link-->
     <!--Link to the next dossier--> <a class="nav-button next"
-      href="06.html">
+      href="07.html">
       <div class="nav-button-text">Next Dossier</div>
     </a>
-    <!--Link to the previous dossier--> <a class="nav-button prev"
-      href="04.html">
+    <!--Link to the previous dossier.--> <a href="05.html"
+      class="nav-button prev">
       <div class="nav-button-text">Previous Dossier</div>
     </a>
     <!--Implementing the Dossier-Number-->
     <div class="dossier-number" id="dossier-number">
-      <p>05</p>
+      <p>06</p>
     </div>
     <!--Navigation bar edges-->
     <!--############################################################################
@@ -84,85 +80,57 @@ Start content ##################################################################
       <div class="content-element">
         <!--Starting Headline-->
         <div class="starting-headline">
-          <h1>2.3 Awareness<br>
+          <h1>2.4 Context<br>
           </h1>
         </div>
         <!--Div starting headline--> </div>
-      <div class="content-element">
-        <div class="media-right"><!--Div caption--> </div>
-        <div>
-          <p> For mobile and ubiquitous learning, adaptivity and
-            awareness are considered as key concepts especially for
-            informal learning support (Syvanen et al., 2005). Awareness
-            is a concept that can also be utilized to acquire relevant
-            information for the design of Ambient Learning Displays
-            within ubiquitous learning environments. In doing so
-            learners can be kept continuously aware about the
-            environment he is proactive in as well as the available
-            resources matching the learning activity. Based on current
-            CSCW and CSCL research social, task, concept, and workspace
-            awareness have been identified for ubiquitous learning
-            environments (Goldman, 1992; Gutwin &amp; Greenberg, 2002)
-            completed by knowledge awareness “for inducing collaboration
-            in a shared knowledge space” and context awareness as
-            crucial “to provide the right information to the right
-            person at the right time and the right place with the right
-            form” (Ogata, 2009).</p>
-          <p> In order to present the acquired information in context an
-            appropriate model is needed that can be used to process and
-            transfer this information in the next step. The Ambient
-            Information Channels model allows the description of
-            contextual learning support patterns (Specht. 2009). The
-            model is based on four infrastructure layers encapsulating
-            the sensor functionality, the informational aggregation, the
-            instructional logic, as well as the visualization and
-            interaction of a context-aware system. The sensor layer
-            collects and handles all sensor information while the
-            aggregation layer combines this information in a meaningful
-            way, which is then used by the control layer to enrich the
-            entities involved in the learning process. The indicator
-            layer finally describes the user interface providing
-            feedback to the user and enabling the interaction with the
-            system.</p>
-          <p> Permanency, accessibility, immediacy, interactivity,
-            situatedness, and adaptability have been&nbsp;identified as
-            the main characteristics for ubiquitous learning embedded in
-            our daily life (Ogata &amp;&nbsp;Yano, 2004).</p>
-          <ul style="margin-left: 40px; ">
-            <li> Permanency: Learners never lose their work unless it is
-              purposefully deleted. In addition, all&nbsp;the learning
-              processes are recorded continuously every day.</li>
-            <li> Accessibility: Learners have access to their documents,
-              data, or videos from anywhere. That&nbsp;information is
-              provided based on their requests. Therefore, the learning
-              involved is selfdirected.</li>
-            <li> Immediacy: Wherever learners are, they can get any
-              information immediately. Thus,&nbsp;learners can solve
-              problems quickly. Otherwise, the learner can record the
-              question and look&nbsp;for the answer later.</li>
-            <li> Interactivity: Learners can interact with experts,
-              teachers, or peers in the form of&nbsp;synchronous or
-              asynchronous communication. Hence, the experts are more
-              reachable and&nbsp;knowledge becomes more available.</li>
-            <li> Situatedness: The learning could be embedded in our
-              daily life. The problems encountered&nbsp;as well as the
-              knowledge required are all presented in their natural and
-              authentic forms. This&nbsp;helps learners notice the
-              features of problem situations that make particular
-              actions relevant.</li>
-            <li> Adaptability: Learners can get the right information at
-              the right place in the right way.</li>
-          </ul>
-        </div>
+      <div>
+        <p> The notion of context varies across many different research
+          areas. In general, context is understood as a knowledge type
+          that facilitates a selective and focused processing of
+          information. In context-aware computing a variety of notions
+          and interpretations has developed over the years. Zimmermann
+          et. al&nbsp; distinguish between definitions by synonym or
+          definitions by example which mainly name and describe certain
+          context parameters as location, identity, time, temperature,
+          noise, as well as beliefs, desires, and commitments and
+          intentions (Andreas&nbsp; Zimmermann, Lorenz, and Oppermann,
+          2007). Furthermore they introduce an operational definition of
+          context describing following main categories of context
+          information:</p>
+        <ul style="margin-left: 40px; ">
+          <li> Individuality Context, includes information about objects
+            and users in the real world as well as information about
+            groups and the attributes or properties the members have in
+            common.</li>
+          <li> Time Context, basically this dimension ranges from simple
+            points in time to ranges, intervals and a complete history
+            of entities.</li>
+          <li> Locations Context, are divided into quantitative and
+            qualitative location models, which allow to work with
+            absolute and relative positions.</li>
+          <li> Activity Context, reflects the entities goals, tasks, and
+            actions.</li>
+          <li> Relations Context, captures the relation an entity has
+            established to other entities, and describes social,
+            functional, and compositional relationships.</li>
+        </ul>
+        <p> Examples for mobile systems using contextual parameters to
+          adapt the learning support have been analysed in (DeJong,
+          Specht, Koper, 2008). In this work we have developed a
+          reference model for mobile social software describing the
+          adaptation in those systems based on a modification of the
+          dimensions presented earlier as adaptation mean, adaptation
+          target, adaptation goal, and adaptation strategy.</p>
       </div>
     </div>
-    <div class="full-column">
-      <!--Div media right-->
-      <p><br>
-      </p>
-      <!--############################################################################
+    <!--Div imgscroll-content-->
+    <!--Initiating the slideshow by calling the JS-->
+    <script type="text/javascript" src="js/imgscroll.js"></script>
+    <!--############################################################################
+ImageSlideshow End #####################################################################################################################################-->
+    <!--############################################################################
 End of content #########################################################################################################################################-->
-    </div>
     <!--Div hyphenate-->
     <!--############################################################################
 Start Footer ###########################################################################################################################################-->
